@@ -11,4 +11,4 @@ if __name__ == '__main__':
     print(homedir)
     print(fields)
     print(sh)
-    heapq.nlargest()
+    # heapq.nlargest()
