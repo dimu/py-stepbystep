@@ -13,13 +13,11 @@ else:
 print(sys.argv)
 print(len(sys.argv))
 
-
 a = b = c = 1
 c = 2
 print(a)
 print(b)
 print(c)
-
 
 # python string
 str1 = "hello world!"
@@ -51,3 +49,12 @@ print(tupletest * 2)
 # can't updata tuple value
 # tupletest[0] = 'ddd'
 # print(tupletest)
+
+# python data type conversion
+print("---------------------data type conversion-------------------")
+print(int('123') + 123)
+print(chr(0x61))  # 将数值转换为对应的字符形式
+print(ord('c'))  # 将字符对应的证书值显示出来
+print(hex(97))  # 将整形转换成对应的十六进制字符串形式
+print(dict({"name": "dwx", "age": 24}))  # 将对象转换为字典类型
+print(tuple(("abc", 123)))
