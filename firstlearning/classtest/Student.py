@@ -1,5 +1,5 @@
 class Student:
-    'student class containes name and sex'
+    """student class containes name and sex"""
 
     studentCount = 0
 
@@ -22,3 +22,21 @@ lily.displayStudent()
 lily.displayStudentCount()
 tom.displayStudent()
 tom.displayStudentCount()
+
+# use attr method to access object's attribute
+# check if has some attribute
+print(hasattr(lily, "name"))
+
+# get attribute value
+print(getattr(lily, "name", "lucy"))
+
+# add attribute
+print(setattr(lily, "score", 100))
+print(getattr(lily, "score"))
+
+# delete attribute
+print(delattr(lily, "name"))
+# erase an error: Student object has no attribute name
+print(lily.displayStudent())
+
+
