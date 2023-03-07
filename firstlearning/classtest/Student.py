@@ -37,6 +37,18 @@ print(getattr(lily, "score"))
 # delete attribute
 print(delattr(lily, "name"))
 # erase an error: Student object has no attribute name
-print(lily.displayStudent())
+# print(lily.displayStudent())
+
+# built-in class attribute
+print("doc:", Student.__doc__)
+print("name:", Student.__name__, "module:", Student.__module__, "dict:", Student.__dict__)
 
 
+# reference count test
+stu1 = Student("tom", "boy")
+stu2 = stu1
+stu3 = stu1
+print(id(stu1), id(stu2), id(stu3))
+del stu1
+del stu2
+del stu3
